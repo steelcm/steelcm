@@ -1,0 +1,61 @@
+//- http://rajasegar.github.io/JADE-Bootstrap/index.html
+extends ../node_modules/jade-bootstrap/_bootstrap
+append styles 
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins")
+    link(rel="stylesheet", href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8")
+    link(rel="stylesheet", href="style.css")  
+append body
+    .header-unit
+        .container
+            span Digital Agency | St. Albans, London
+            .pull-right
+                a.btn.btn-text.social-icon.socicon-linkedin(href="#")
+                a.btn.btn-text.social-icon.socicon-twitter(href="#")
+                a.btn.btn-text.social-icon.socicon-github(href="#")
+
+    .hero-unit
+        .container
+            h1 Christopher Steel
+            h2 Freelance web application developer based in London, UK
+            h3.btn.btn-primary.btn-lg Get In Contact
+    nav( role="navigation", class=["navbar", "navbar-default"] )
+        .navbar-header
+            button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#main", aria-expanded="false", aria-controls="navbar")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+        .collapse.navbar-collapse(id="main")
+            .container
+                ul.nav.navbar-nav
+                    li.active: a(href="#services") Services
+                    li: a(href="#testimonials") Testimonials
+                    li: a(href="#about") Contact
+                    li: a(href="#blog") Blog
+    .overview
+        .container
+            h3.text-center Software services to grow your business.
+            p.text-center We have all kinds of services designed to help you save time and run a better business.
+            .col-md-3.col-sm-6
+                a(href="www.steelcm.com").card
+                    h4.text-center  Something
+                    p Send invoices from your phone, tablet or desktop and get paid fast. Set up recurring payments to get paid automatically for repeat jobs.
+                    p.cta.text-center  Learn More
+
+            .col-md-3.col-sm-6
+                a(href="www.steelcm.com").card
+                    h4.text-center Something
+                    p Send invoices from your phone, tablet or desktop and get paid fast. Set up recurring payments to get paid automatically for repeat jobs.
+                    p.cta.text-center Learn More
+
+            .col-md-3.col-sm-6
+                a(href="www.steelcm.com").card
+                    h4.text-center  Something
+                    p Send invoices from your phone, tablet or desktop and get paid fast. Set up recurring payments to get paid automatically for repeat jobs.
+                    p.cta.text-center Learn More
+
+            .col-md-3.col-sm-6
+                a(href="www.steelcm.com").card
+                    h4.text-center  Something
+                    p Send invoices from your phone, tablet or desktop and get paid fast. Set up recurring payments to get paid automatically for repeat jobs.
+                    p.cta.text-center Learn More
